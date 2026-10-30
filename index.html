@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/escolhidos/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="img/escolhidos/fotoLogo.png" alt="logoFriends">
+        <p class="paragrafo1">Aquele em que você revê os melhores momentos de Friends!</p>
+        <p> Explore nossas imagens por categoria</p>
+    </header>
+    <nav class="filtros">
+        <button class="filtro ativo" data-filtro="todas">Todas</button>
+        <button class="filtro" data-filtro="Personagens">Personagens</button>
+        <button class="filtro" data-filtro="Lugares">Lugares</button>
+        <button class="filtro" data-filtro="Casais">Casais</button>
+    </nav>
+    <p id="totalImagens" class="total"></p>
+    <main class="galeria">
+        <img src="img/escolhidos/foto1.jpg" alt="Personagens Milk Shake" class="miniatura destaque"
+            data-categoria="Personagens"
+            data-descricao="Cena clássica com os personagens em destaque, mostrando a química do grupo e o humor que marcou a série."
+            tabindex="0">
+        <img src="img/escolhidos/foto2.jpg" alt="Sofá De Abertura" class="miniatura horizontal" data-categoria="Lugares"
+            data-descricao="O icônico sofá da abertura, símbolo visual de Friends e de todos os momentos compartilhados no apartamento."
+            tabindex="0">
+        <img src="img/escolhidos/foto3.jpg" alt="Monica & Pheobe & Rachel" class="miniatura"
+            data-categoria="Personagens"
+            data-descricao="Monica, Phoebe e Rachel em uma cena memorável de amizade, protagonismo e diversão entre as amigas."
+            tabindex="0">
+        <img src="img/escolhidos/foto4.jpg" alt="Ross & Rachel" class="miniatura vertical" data-categoria="Casais"
+            data-descricao="Ross e Rachel representam um dos romances mais queridos da série, sempre com drama, amor e nostalgia."
+            tabindex="0">
+        <img src="img/escolhidos/foto5.jpg" alt="Casa da Monica" class="miniatura" data-categoria="Lugares"
+            data-descricao="A casa da Monica é um dos cenários mais emblemáticos da série, onde muitas cenas importantes aconteceram."
+            tabindex="0">
+        <img src="img/escolhidos/foto6.jpg" alt="Casamento Monica & Chandler" class="miniatura horizontal"
+            data-categoria="Casais"
+            data-descricao="A celebração do casamento de Monica e Chandler é um dos momentos mais emocionantes e queridos da trama."
+            tabindex="0">
+        <img src="img/escolhidos/foto7.jpg" alt="Central Perk" class="miniatura" data-categoria="Lugares"
+            data-descricao="Central Perk, o café onde todos se reuniam, tornou-se ponto central das conversas e das histórias da série."
+            tabindex="0">
+        <img src="img/escolhidos/foto8.jpg" alt="Chandler & Joey & Ross" class="miniatura" data-categoria="Personagens"
+            data-descricao="Uma cena divertida e marcante entre Chandler, Joey e Ross, mostrando a amizade e o humor do trio."
+            tabindex="0">
+        <img src="img/escolhidos/foto9.jpg" alt="Abertura Guarda-Chuva" class="miniatura horizontal"
+            data-categoria="Personagens"
+            data-descricao="A abertura com o guarda-chuva se tornou um ícone visual da série e representa o clima acolhedor da história."
+            tabindex="0">
+    </main>
+    <div id="modal" class="modal">
+        <button id="fechar" class="fechar">&times;</button>
+        <button id="anterior" class="navegacao anterior">&#10094;</button>
+        <div class="modal-conteudo">
+            <img src="" alt="Imagem Ampliada" id="imagensModal">
+            <div class="legenda">
+                <span id="contador"></span>
+                <span id="nomeImagem"></span>
+            </div>
+            <p id="descricaoImagem" class="descricao-imagem"></p>
+        </div>
+        <button id="proximo" class="navegacao proximo">&#10095;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
